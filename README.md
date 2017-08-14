@@ -1,11 +1,11 @@
 # Makerball-Arduino
 MAKERBALL – The DIY Pinball Machine Kit
-
+http://www.make-and-play.ch
 
 Requirements:
--ArduinoIDE (https://www.arduino.cc/en/Main/OldSoftwareReleases)
--Board: Arduino/Genuino 101 (Bluetooth - https://www.arduino.cc/en/Main/ArduinoBoard101/)
--Library: CurieBLE (Bluetooth)
+- ArduinoIDE (https://www.arduino.cc/en/Main/OldSoftwareReleases)
+- Board: Arduino/Genuino 101 (Bluetooth - https://www.arduino.cc/en/Main/ArduinoBoard101/)
+- Library: CurieBLE (Bluetooth)
 
 Installation:
 1. Download and install ArduinoIDE

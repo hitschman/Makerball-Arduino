@@ -10,17 +10,20 @@ BLEPeripheral blePeripheral;
 BLEService bleService(bleServiceUUID); // BLE LED Service
 BLEIntCharacteristic switchCharacteristic(positionCharUUID, BLERead | BLEWrite | BLENotify);
 
-
 void setup_bluetooth() {
   pinMode(outBluetoothLED, OUTPUT);   // initialize the LED on pin 13 to indicate when a central is connected
 
   // set advertised local name and service UUID:
-  blePeripheral.setLocalName("LED");
   blePeripheral.setAdvertisedServiceUuid(bleService.uuid());
 
   // add service and characteristic:
   blePeripheral.addAttribute(bleService);
   blePeripheral.addAttribute(switchCharacteristic);
+
+  // add name:
+  blePeripheral.setDeviceName(bleName);
+  blePeripheral.setLocalName(bleName);
+
 
 
   // set the initial value for the characeristic:
